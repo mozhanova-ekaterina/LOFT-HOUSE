@@ -1,0 +1,51 @@
+.footer {
+    background: $footer-bg;
+    padding: 60px 0;
+    font-size: 14px;
+
+    // .footer__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @include mediaTablet{
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mediaPhone{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+
+    // .footer__nav
+
+    &__nav {
+    }
+
+    // .footer__nav-list
+
+    &__nav-list {
+        display: grid;
+        gap: 15px;
+        letter-spacing: .7px;
+    }
+
+    // .footer__address
+
+    &__address {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
